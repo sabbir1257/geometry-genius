@@ -29,12 +29,12 @@
                               <p class="text-center">Area (A) = 0.5 X b X h</p>
                               <!-- input div -->
                               <div class="flex items-center justify-center">
-                                   <input class="w-24 p-2 rounded-md" type="text" placeholder="b">
+                                   <input id="triangle-base" class="w-24 p-2 rounded-md" type="text" placeholder="b">
                                    <span class="ml-2 mr-4">cm</span>
-                                   <input class="w-24 p-2 rounded-md" type="text" placeholder="h">
+                                   <input id="triangle-height" class="w-24 p-2 rounded-md" type="text" placeholder="h">
                                    <span class="ml-2 ">cm</span>
                               </div>
-                              <button class="w-full btn btn-primary">Calculate</button>
+                              <button onclick="calculateTriangleArea()" class="w-full btn btn-primary">Calculate</button>
 
                          </div>
                     </div>
@@ -87,6 +87,7 @@
                </div>
           </div>
      </main>
+     <script src="scripts/triangle-calculate.js"></script>
 </body>
 
 </html>
