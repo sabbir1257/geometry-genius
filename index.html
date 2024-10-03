@@ -157,20 +157,38 @@
                                    </p>
                               </div>
                               <div class="justify-end card-actions">
-                                   <button onclick="calculatePentagonArea()" class="w-full btn btn-primary">Calculate</button>
+                                   <button onclick="calculatePentagonArea()"
+                                        class="w-full btn btn-primary">Calculate</button>
                               </div>
                          </div>
                     </div>
                     <!-- Ellipse card-->
                     <div class="shadow-xl card bg-base-100 w-96">
                          <figure>
-                              <img src="images/pentagon.png" />
+                              <img src="images/ellipse.png" />
                          </figure>
                          <div class="card-body">
-                              <h2 class="card-title">Shoes!</h2>
-                              <p>If a dog chews shoes whose shoes does he choose?</p>
+                              <h2 class="text-2xl font-bold text-center">Ellipse</h2>
+                              <p class="text-center">Area (A) = π X a X b</p>
+                              <!-- Ellipse input -->
+                              <div class="flex items-center justify-center">
+                                   <!-- Ellipse major  -->
+                                   <input id="ellipse-major-readius" class="w-24 p-2 rounded-md" type="text"
+                                        placeholder="Major">
+                                   <span class="ml-2 mr-4">cm</span>
+                                   <!-- Ellipse minor -->
+                                   <input id="ellipse-minor-readius" class="w-24 p-2 rounded-md" type="text"
+                                        placeholder="Minor">
+                                   <span class="ml-2 ">cm</span>
+                              </div>
+                              <!-- area output section -->
+                              <div>
+                                   <p class="text-2xl">Area: <span id="ellipse-area">0</span>
+                                        <span>cm<sup>2</sup></span>
+                                   </p>
+                              </div>
                               <div class="justify-end card-actions">
-                                   <button class="btn btn-primary">Buy Now</button>
+                                   <button class="w-full btn btn-primary">Calculate</button>
                               </div>
                          </div>
                     </div>
@@ -185,6 +203,7 @@
      <script src="scripts/rectangle.js"></script>
      <script src="scripts/parallelogram.js"></script>
      <script src="scripts/pentagon-area.js"></script>
+     <script src="scripts/ellipse-area.js"></script>
 </body>
 
 </html>
