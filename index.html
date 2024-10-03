@@ -106,17 +106,15 @@
                     <!-- Rhombus card -->
                     <div class="shadow-xl card bg-base-100 w-96">
                          <figure>
-                              <img src="images/rhombus.png"
-                                   alt="Shoes" />
+                              <img src="images/rhombus.png" alt="Shoes" />
                          </figure>
                          <div class="card-body">
-                              <h2 class="card-title">Rhombus</h2>
-                              <p>If a dog chews shoes whose shoes does he choose?</p>
+                              <h2 class="text-2xl font-bold text-center">Rhombus</h2>
+                              <p class="text-center">If a dog chews shoes whose shoes does he choose?</p>
                               <!-- Rhombus input -->
                               <div class="flex items-center justify-center">
                                    <!-- Rhombus d  -->
-                                   <input id="rhombus-d1" class="w-24 p-2 rounded-md" type="text"
-                                        placeholder="d">
+                                   <input id="rhombus-d1" class="w-24 p-2 rounded-md" type="text" placeholder="d">
                                    <span class="ml-2 mr-4">cm</span>
                                    <!-- Rhombus height -->
                                    <input id="rhombus-height" class="w-24 p-2 rounded-md" type="text"
@@ -129,15 +127,44 @@
                                    </p>
                               </div>
                               <div class="justify-end card-actions">
-                                   <button class="btn btn-primary">Buy Now</button>
+                                   <button class="w-full btn btn-primary">Calculate</button>
                               </div>
                          </div>
                     </div>
-                    <!-- Triangle card 4-->
+                    <!-- Pentagon card -->
                     <div class="shadow-xl card bg-base-100 w-96">
                          <figure>
-                              <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                   alt="Shoes" />
+                              <img src="images/pentagon.png" alt="Shoes" />
+                         </figure>
+                         <div class="card-body">
+                              <h2 class="text-2xl font-bold text-center">Pentagon</h2>
+                              <p class="text-center">Area (A) = 0.5 X p X b</p>
+                              <!-- Pentagon input -->
+                              <div class="flex items-center justify-center">
+                                   <!-- Pentagon perimeter  -->
+                                   <input id="pentagon-perimeter" class="w-24 p-2 rounded-md" type="text"
+                                        placeholder="Perimeter">
+                                   <span class="ml-2 mr-4">cm</span>
+                                   <!-- Pentagon apothem -->
+                                   <input id="pentagon-apothem" class="w-24 p-2 rounded-md" type="text"
+                                        placeholder="Apothem">
+                                   <span class="ml-2 ">cm</span>
+                              </div>
+                              <!-- area output section -->
+                              <div>
+                                   <p class="text-2xl">Area: <span id="pentagon-area">0</span>
+                                        <span>cm<sup>2</sup></span>
+                                   </p>
+                              </div>
+                              <div class="justify-end card-actions">
+                                   <button onclick="calculatePentagonArea()" class="w-full btn btn-primary">Calculate</button>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- Ellipse card-->
+                    <div class="shadow-xl card bg-base-100 w-96">
+                         <figure>
+                              <img src="images/pentagon.png" />
                          </figure>
                          <div class="card-body">
                               <h2 class="card-title">Shoes!</h2>
@@ -157,6 +184,7 @@
      <script src="scripts/triangle-calculate.js"></script>
      <script src="scripts/rectangle.js"></script>
      <script src="scripts/parallelogram.js"></script>
+     <script src="scripts/pentagon-area.js"></script>
 </body>
 
 </html>
